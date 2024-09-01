@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react';
 import { sentryVitePlugin } from "@sentry/vite-plugin";
 import path from 'path';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), sentryVitePlugin({
     org: "jsr-vp",
@@ -12,7 +11,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src')
+      '@': path.resolve(__dirname, './src'),
     }
   },
 
